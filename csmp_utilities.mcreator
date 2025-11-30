@@ -1,14 +1,31 @@
 {
-  "mod_elements": [],
+  "mod_elements": [
+    {
+      "name": "Itemtest",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "itemtest",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/csmp_utilities/models/item/itemtest.json",
+          "src/main/java/net/mcreator/csmputilities/item/ItemtestItem.java"
+        ]
+      }
+    }
+  ],
   "variable_elements": [],
   "sound_elements": [],
   "tag_elements": {},
   "tab_element_order": {},
   "language_map": {
-    "en_us": {}
+    "en_us": {
+      "item.csmp_utilities.itemtest": "Itemtest"
+    }
   },
   "metadata": {
     "files": [
+      "src/main/java/net/mcreator/csmputilities/init/CsmpUtilitiesModItems.java",
       "src/main/resources/META-INF/neoforge.mods.toml",
       "src/main/java/net/mcreator/csmputilities/CsmpUtilitiesMod.java",
       "src/main/resources/pack.mcmeta"
