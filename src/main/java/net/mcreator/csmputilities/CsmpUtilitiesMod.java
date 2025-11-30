@@ -19,6 +19,7 @@ import net.minecraft.network.codec.StreamCodec;
 import net.minecraft.network.FriendlyByteBuf;
 
 import net.mcreator.csmputilities.init.CsmpUtilitiesModItems;
+import net.mcreator.csmputilities.init.CsmpUtilitiesModBlocks;
 
 import java.util.concurrent.ConcurrentLinkedQueue;
 import java.util.Map;
@@ -37,6 +38,7 @@ public class CsmpUtilitiesMod {
 		// End of user code block mod constructor
 		NeoForge.EVENT_BUS.register(this);
 		modEventBus.addListener(this::registerNetworking);
+		CsmpUtilitiesModBlocks.REGISTRY.register(modEventBus);
 		CsmpUtilitiesModItems.REGISTRY.register(modEventBus);
 		// Start of user code block mod init
 		// End of user code block mod init

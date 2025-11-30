@@ -12,6 +12,22 @@
           "src/main/java/net/mcreator/csmputilities/item/ItemtestItem.java"
         ]
       }
+    },
+    {
+      "name": "Bloquecaramelo",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bloquecaramelo",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/csmp_utilities/loot_table/blocks/bloquecaramelo.json",
+          "src/main/resources/assets/csmp_utilities/models/block/bloquecaramelo.json",
+          "src/main/java/net/mcreator/csmputilities/block/BloquecarameloBlock.java",
+          "src/main/resources/assets/csmp_utilities/models/item/bloquecaramelo.json",
+          "src/main/resources/assets/csmp_utilities/blockstates/bloquecaramelo.json"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -20,15 +36,17 @@
   "tab_element_order": {},
   "language_map": {
     "en_us": {
-      "item.csmp_utilities.itemtest": "Itemtest"
+      "item.csmp_utilities.itemtest": "Itemtest",
+      "block.csmp_utilities.bloquecaramelo": "Bloquecaramelo"
     }
   },
   "metadata": {
     "files": [
+      "src/main/java/net/mcreator/csmputilities/init/CsmpUtilitiesModBlocks.java",
       "src/main/java/net/mcreator/csmputilities/init/CsmpUtilitiesModItems.java",
-      "src/main/resources/META-INF/neoforge.mods.toml",
       "src/main/java/net/mcreator/csmputilities/CsmpUtilitiesMod.java",
-      "src/main/resources/pack.mcmeta"
+      "src/main/resources/pack.mcmeta",
+      "src/main/resources/META-INF/neoforge.mods.toml"
     ]
   },
   "foldersRoot": {
