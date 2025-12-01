@@ -1,5 +1,4 @@
 {
-  "item.csmp_utilities.itemtest": "Itemtest",
-  "block.csmp_utilities.bloquecaramelo": "Bloquecaramelo",
-  "attribute.csmp_utilities.fugitive": "Fugitive"
+  "attribute.csmp_utilities.fugitive": "Fugitive",
+  "enchantment.csmp_utilities.acidity": "Acidity"
 }

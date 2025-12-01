@@ -1,35 +1,6 @@
 {
   "mod_elements": [
     {
-      "name": "Itemtest",
-      "type": "item",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "itemtest",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/csmp_utilities/models/item/itemtest.json",
-          "src/main/java/net/mcreator/csmputilities/item/ItemtestItem.java"
-        ]
-      }
-    },
-    {
-      "name": "Bloquecaramelo",
-      "type": "block",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "bloquecaramelo",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/csmp_utilities/loot_table/blocks/bloquecaramelo.json",
-          "src/main/resources/assets/csmp_utilities/models/block/bloquecaramelo.json",
-          "src/main/java/net/mcreator/csmputilities/block/BloquecarameloBlock.java",
-          "src/main/resources/assets/csmp_utilities/models/item/bloquecaramelo.json",
-          "src/main/resources/assets/csmp_utilities/blockstates/bloquecaramelo.json"
-        ]
-      }
-    },
-    {
       "name": "Fugitive",
       "type": "attribute",
       "compiles": true,
@@ -37,7 +8,8 @@
       "registry_name": "fugitive",
       "metadata": {
         "files": []
-      }
+      },
+      "path": "~/Fugitive"
     },
     {
       "name": "Drophead",
@@ -71,7 +43,8 @@
         "files": [
           "src/main/java/net/mcreator/csmputilities/procedures/DropheadProcedure.java"
         ]
-      }
+      },
+      "path": "~/Fugitive"
     },
     {
       "name": "Fugitiveglow",
@@ -89,25 +62,46 @@
         "files": [
           "src/main/java/net/mcreator/csmputilities/procedures/FugitiveglowProcedure.java"
         ]
-      }
+      },
+      "path": "~/Fugitive"
+    },
+    {
+      "name": "Acidity",
+      "type": "enchantment",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "acidity",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/csmp_utilities/enchantment/acidity.json"
+        ]
+      },
+      "path": "~/Enchants"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
-  "tag_elements": {},
+  "tag_elements": {
+    "ENCHANTMENTS:minecraft:tradeable": [
+      "~CUSTOM:Acidity"
+    ],
+    "ENCHANTMENTS:minecraft:on_random_loot": [
+      "~CUSTOM:Acidity"
+    ],
+    "ENCHANTMENTS:minecraft:non_treasure": [
+      "~CUSTOM:Acidity"
+    ]
+  },
   "tab_element_order": {},
   "language_map": {
     "en_us": {
-      "item.csmp_utilities.itemtest": "Itemtest",
-      "block.csmp_utilities.bloquecaramelo": "Bloquecaramelo",
-      "attribute.csmp_utilities.fugitive": "Fugitive"
+      "attribute.csmp_utilities.fugitive": "Fugitive",
+      "enchantment.csmp_utilities.acidity": "Acidity"
     }
   },
   "metadata": {
     "files": [
       "src/main/java/net/mcreator/csmputilities/init/CsmpUtilitiesModAttributes.java",
-      "src/main/java/net/mcreator/csmputilities/init/CsmpUtilitiesModBlocks.java",
-      "src/main/java/net/mcreator/csmputilities/init/CsmpUtilitiesModItems.java",
       "src/main/resources/META-INF/neoforge.mods.toml",
       "src/main/java/net/mcreator/csmputilities/CsmpUtilitiesMod.java",
       "src/main/resources/pack.mcmeta"
@@ -115,7 +109,16 @@
   },
   "foldersRoot": {
     "name": "~",
-    "children": []
+    "children": [
+      {
+        "name": "Fugitive",
+        "children": []
+      },
+      {
+        "name": "Enchants",
+        "children": []
+      }
+    ]
   },
   "workspaceSettings": {
     "modid": "csmp_utilities",
