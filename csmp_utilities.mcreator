@@ -117,6 +117,20 @@
         ]
       },
       "path": "~/Enchants/Acidity"
+    },
+    {
+      "name": "Acid",
+      "type": "particle",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "acid",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/csmp_utilities/particles/acid.json",
+          "src/main/java/net/mcreator/csmputilities/client/particle/AcidParticle.java"
+        ]
+      },
+      "path": "~/Particles"
     }
   ],
   "variable_elements": [],
@@ -143,6 +157,8 @@
   "metadata": {
     "files": [
       "src/main/java/net/mcreator/csmputilities/init/CsmpUtilitiesModAttributes.java",
+      "src/main/java/net/mcreator/csmputilities/init/CsmpUtilitiesModParticleTypes.java",
+      "src/main/java/net/mcreator/csmputilities/init/CsmpUtilitiesModParticles.java",
       "src/main/java/net/mcreator/csmputilities/init/CsmpUtilitiesModMobEffects.java",
       "src/main/resources/META-INF/neoforge.mods.toml",
       "src/main/java/net/mcreator/csmputilities/CsmpUtilitiesMod.java",
@@ -184,6 +200,10 @@
       },
       {
         "name": "Mobs",
+        "children": []
+      },
+      {
+        "name": "Particles",
         "children": []
       }
     ]

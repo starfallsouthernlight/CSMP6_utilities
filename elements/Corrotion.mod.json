@@ -3,10 +3,13 @@
   "_type": "potioneffect",
   "definition": {
     "effectName": "Corrotion",
-    "icon": "extension",
+    "icon": "pixil-frame-0",
     "color": {
-      "value": -52225,
+      "value": -13369549,
       "falpha": 0.0
+    },
+    "particle": {
+      "value": "CUSTOM:Acid"
     },
     "onAddedSound": {
       "value": ""
