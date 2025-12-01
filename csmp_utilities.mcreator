@@ -28,6 +28,68 @@
           "src/main/resources/assets/csmp_utilities/blockstates/bloquecaramelo.json"
         ]
       }
+    },
+    {
+      "name": "Fugitive",
+      "type": "attribute",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fugitive",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "Drophead",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "drophead",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/csmputilities/procedures/DropheadProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "Fugitiveglow",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fugitiveglow",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/csmputilities/procedures/FugitiveglowProcedure.java"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -37,16 +99,18 @@
   "language_map": {
     "en_us": {
       "item.csmp_utilities.itemtest": "Itemtest",
-      "block.csmp_utilities.bloquecaramelo": "Bloquecaramelo"
+      "block.csmp_utilities.bloquecaramelo": "Bloquecaramelo",
+      "attribute.csmp_utilities.fugitive": "Fugitive"
     }
   },
   "metadata": {
     "files": [
+      "src/main/java/net/mcreator/csmputilities/init/CsmpUtilitiesModAttributes.java",
       "src/main/java/net/mcreator/csmputilities/init/CsmpUtilitiesModBlocks.java",
       "src/main/java/net/mcreator/csmputilities/init/CsmpUtilitiesModItems.java",
+      "src/main/resources/META-INF/neoforge.mods.toml",
       "src/main/java/net/mcreator/csmputilities/CsmpUtilitiesMod.java",
-      "src/main/resources/pack.mcmeta",
-      "src/main/resources/META-INF/neoforge.mods.toml"
+      "src/main/resources/pack.mcmeta"
     ]
   },
   "foldersRoot": {

@@ -1,4 +1,5 @@
 {
   "item.csmp_utilities.itemtest": "Itemtest",
-  "block.csmp_utilities.bloquecaramelo": "Bloquecaramelo"
+  "block.csmp_utilities.bloquecaramelo": "Bloquecaramelo",
+  "attribute.csmp_utilities.fugitive": "Fugitive"
 }
