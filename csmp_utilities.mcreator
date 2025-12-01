@@ -76,7 +76,7 @@
           "src/main/resources/data/csmp_utilities/enchantment/acidity.json"
         ]
       },
-      "path": "~/Enchants"
+      "path": "~/Enchants/Acidity"
     },
     {
       "name": "Corrotion",
@@ -89,7 +89,7 @@
           "src/main/java/net/mcreator/csmputilities/potion/CorrotionMobEffect.java"
         ]
       },
-      "path": "~/Enchants"
+      "path": "~/Effects"
     },
     {
       "name": "Acidityapply",
@@ -116,7 +116,7 @@
           "src/main/java/net/mcreator/csmputilities/procedures/AcidityapplyProcedure.java"
         ]
       },
-      "path": "~/Enchants"
+      "path": "~/Enchants/Acidity"
     }
   ],
   "variable_elements": [],
@@ -158,6 +158,15 @@
       },
       {
         "name": "Enchants",
+        "children": [
+          {
+            "name": "Acidity",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Effects",
         "children": []
       }
     ]
