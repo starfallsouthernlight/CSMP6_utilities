@@ -5,7 +5,7 @@
     "effectName": "Corrotion",
     "icon": "extension",
     "color": {
-      "value": -1,
+      "value": -52225,
       "falpha": 0.0
     },
     "onAddedSound": {

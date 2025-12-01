@@ -10,7 +10,7 @@ import net.mcreator.csmputilities.CsmpUtilitiesMod;
 
 public class CorrotionMobEffect extends MobEffect {
 	public CorrotionMobEffect() {
-		super(MobEffectCategory.HARMFUL, -1);
+		super(MobEffectCategory.HARMFUL, -52225);
 		this.addAttributeModifier(Attributes.ARMOR, ResourceLocation.fromNamespaceAndPath(CsmpUtilitiesMod.MODID, "effect.corrotion_0"), -4, AttributeModifier.Operation.ADD_VALUE);
 	}
 }
