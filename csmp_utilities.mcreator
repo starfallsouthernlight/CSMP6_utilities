@@ -9,7 +9,7 @@
       "metadata": {
         "files": []
       },
-      "path": "~/Fugitive"
+      "path": "~/Attributes/Fugitive"
     },
     {
       "name": "Drophead",
@@ -44,7 +44,7 @@
           "src/main/java/net/mcreator/csmputilities/procedures/DropheadProcedure.java"
         ]
       },
-      "path": "~/Fugitive"
+      "path": "~/Attributes/Fugitive"
     },
     {
       "name": "Fugitiveglow",
@@ -63,7 +63,7 @@
           "src/main/java/net/mcreator/csmputilities/procedures/FugitiveglowProcedure.java"
         ]
       },
-      "path": "~/Fugitive"
+      "path": "~/Attributes/Fugitive"
     },
     {
       "name": "Acidity",
@@ -153,10 +153,6 @@
     "name": "~",
     "children": [
       {
-        "name": "Fugitive",
-        "children": []
-      },
-      {
         "name": "Enchants",
         "children": [
           {
@@ -167,6 +163,27 @@
       },
       {
         "name": "Effects",
+        "children": []
+      },
+      {
+        "name": "Blocks",
+        "children": []
+      },
+      {
+        "name": "Attributes",
+        "children": [
+          {
+            "name": "Fugitive",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Items",
+        "children": []
+      },
+      {
+        "name": "Mobs",
         "children": []
       }
     ]
