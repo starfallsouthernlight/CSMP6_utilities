@@ -77,6 +77,46 @@
         ]
       },
       "path": "~/Enchants"
+    },
+    {
+      "name": "Corrotion",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "corrotion",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/csmputilities/potion/CorrotionMobEffect.java"
+        ]
+      },
+      "path": "~/Enchants"
+    },
+    {
+      "name": "Acidityapply",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "acidityapply",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "damagesource",
+            "type": "damagesource"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/csmputilities/procedures/AcidityapplyProcedure.java"
+        ]
+      },
+      "path": "~/Enchants"
     }
   ],
   "variable_elements": [],
@@ -96,12 +136,14 @@
   "language_map": {
     "en_us": {
       "attribute.csmp_utilities.fugitive": "Fugitive",
-      "enchantment.csmp_utilities.acidity": "Acidity"
+      "enchantment.csmp_utilities.acidity": "Acidity",
+      "effect.csmp_utilities.corrotion": "Corrotion"
     }
   },
   "metadata": {
     "files": [
       "src/main/java/net/mcreator/csmputilities/init/CsmpUtilitiesModAttributes.java",
+      "src/main/java/net/mcreator/csmputilities/init/CsmpUtilitiesModMobEffects.java",
       "src/main/resources/META-INF/neoforge.mods.toml",
       "src/main/java/net/mcreator/csmputilities/CsmpUtilitiesMod.java",
       "src/main/resources/pack.mcmeta"

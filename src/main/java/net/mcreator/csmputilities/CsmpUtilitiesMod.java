@@ -18,6 +18,7 @@ import net.minecraft.network.protocol.common.custom.CustomPacketPayload;
 import net.minecraft.network.codec.StreamCodec;
 import net.minecraft.network.FriendlyByteBuf;
 
+import net.mcreator.csmputilities.init.CsmpUtilitiesModMobEffects;
 import net.mcreator.csmputilities.init.CsmpUtilitiesModAttributes;
 
 import java.util.concurrent.ConcurrentLinkedQueue;
@@ -37,6 +38,7 @@ public class CsmpUtilitiesMod {
 		// End of user code block mod constructor
 		NeoForge.EVENT_BUS.register(this);
 		modEventBus.addListener(this::registerNetworking);
+		CsmpUtilitiesModMobEffects.REGISTRY.register(modEventBus);
 		CsmpUtilitiesModAttributes.REGISTRY.register(modEventBus);
 		// Start of user code block mod init
 		// End of user code block mod init

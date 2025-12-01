@@ -1,4 +1,5 @@
 {
   "attribute.csmp_utilities.fugitive": "Fugitive",
-  "enchantment.csmp_utilities.acidity": "Acidity"
+  "enchantment.csmp_utilities.acidity": "Acidity",
+  "effect.csmp_utilities.corrotion": "Corrotion"
 }
