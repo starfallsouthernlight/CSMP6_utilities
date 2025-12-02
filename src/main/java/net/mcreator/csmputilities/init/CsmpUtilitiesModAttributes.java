@@ -20,9 +20,11 @@ import net.mcreator.csmputilities.CsmpUtilitiesMod;
 public class CsmpUtilitiesModAttributes {
 	public static final DeferredRegister<Attribute> REGISTRY = DeferredRegister.create(BuiltInRegistries.ATTRIBUTE, CsmpUtilitiesMod.MODID);
 	public static final DeferredHolder<Attribute, Attribute> FUGITIVE = REGISTRY.register("fugitive", () -> new RangedAttribute("attribute.csmp_utilities.fugitive", 0, 0, 1).setSyncable(true).setSentiment(Attribute.Sentiment.NEGATIVE));
+	public static final DeferredHolder<Attribute, Attribute> DEFENDERS = REGISTRY.register("defenders", () -> new RangedAttribute("attribute.csmp_utilities.defenders", 0, 0, 4).setSyncable(true));
 
 	@SubscribeEvent
 	public static void addAttributes(EntityAttributeModificationEvent event) {
 		event.add(EntityType.PLAYER, FUGITIVE);
+		event.add(EntityType.PLAYER, DEFENDERS);
 	}
 }

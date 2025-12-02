@@ -100,11 +100,11 @@
       "metadata": {
         "dependencies": [
           {
-            "name": "damagesource",
-            "type": "damagesource"
+            "name": "entity",
+            "type": "entity"
           },
           {
-            "name": "entity",
+            "name": "sourceentity",
             "type": "entity"
           },
           {
@@ -131,6 +131,36 @@
         ]
       },
       "path": "~/Particles"
+    },
+    {
+      "name": "Defenders",
+      "type": "attribute",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "defenders",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Attributes/Defenders"
+    },
+    {
+      "name": "Defendersbuff",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "defendersbuff",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/csmputilities/procedures/DefendersbuffProcedure.java"
+        ]
+      },
+      "path": "~/Attributes/Defenders"
     }
   ],
   "variable_elements": [],
@@ -151,7 +181,8 @@
     "en_us": {
       "attribute.csmp_utilities.fugitive": "Fugitive",
       "enchantment.csmp_utilities.acidity": "Acidity",
-      "effect.csmp_utilities.corrotion": "Corrotion"
+      "effect.csmp_utilities.corrotion": "Corrotion",
+      "attribute.csmp_utilities.defenders": "Defenders"
     }
   },
   "metadata": {
@@ -190,6 +221,10 @@
         "children": [
           {
             "name": "Fugitive",
+            "children": []
+          },
+          {
+            "name": "Defenders",
             "children": []
           }
         ]

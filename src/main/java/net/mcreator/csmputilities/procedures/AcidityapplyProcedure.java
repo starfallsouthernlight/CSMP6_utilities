@@ -37,7 +37,7 @@ public class AcidityapplyProcedure {
 		if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)
 				.getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(ResourceKey.create(Registries.ENCHANTMENT, ResourceLocation.parse("csmp_utilities:acidity")))) != 0) {
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-				_entity.addEffect(new MobEffectInstance(CsmpUtilitiesModMobEffects.CORROTION, 200, 1));
+				_entity.addEffect(new MobEffectInstance(CsmpUtilitiesModMobEffects.CORROTION, 200, 0));
 		}
 	}
 }
