@@ -28,9 +28,6 @@
           "value": "CUSTOM:NekooooAnimation.idle"
         },
         "speed": 1.0,
-        "condition": {
-          "name": "Idle_condition"
-        },
         "walking": false,
         "amplitude": 1.0
       }

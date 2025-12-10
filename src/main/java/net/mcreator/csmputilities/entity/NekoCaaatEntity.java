@@ -19,7 +19,6 @@ import net.minecraft.sounds.SoundEvent;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.registries.BuiltInRegistries;
 
-import net.mcreator.csmputilities.procedures.Idle_conditionProcedure;
 import net.mcreator.csmputilities.init.CsmpUtilitiesModEntities;
 
 public class NekoCaaatEntity extends Monster {
@@ -52,7 +51,7 @@ public class NekoCaaatEntity extends Monster {
 	public void tick() {
 		super.tick();
 		if (this.level().isClientSide()) {
-			this.animationState0.animateWhen(Idle_conditionProcedure.execute(this), this.tickCount);
+			this.animationState0.animateWhen(true, this.tickCount);
 		}
 	}
 
