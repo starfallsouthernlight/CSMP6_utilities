@@ -174,6 +174,50 @@
         ]
       },
       "path": "~/Enchants/Backstep"
+    },
+    {
+      "name": "Gorra",
+      "type": "armor",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gorra",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/csmputilities/item/GorraItem.java",
+          "src/main/resources/assets/csmp_utilities/models/item/gorra_helmet.json"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "NekoCaaat",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "neko_caaat",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/csmputilities/entity/NekoCaaatEntity.java",
+          "src/main/java/net/mcreator/csmputilities/client/renderer/NekoCaaatRenderer.java",
+          "src/main/resources/assets/csmp_utilities/models/item/neko_caaat_spawn_egg.json",
+          "src/main/resources/data/csmp_utilities/neoforge/biome_modifier/neko_caaat_biome_modifier.json"
+        ]
+      },
+      "path": "~/Mobs"
+    },
+    {
+      "name": "Cascooo",
+      "type": "armor",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cascooo",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/csmputilities/item/CascoooItem.java",
+          "src/main/resources/assets/csmp_utilities/models/item/cascooo_helmet.json"
+        ]
+      },
+      "path": "~/Items"
     }
   ],
   "variable_elements": [],
@@ -190,6 +234,10 @@
     "ENCHANTMENTS:minecraft:non_treasure": [
       "~CUSTOM:Backstep",
       "~CUSTOM:Acidity"
+    ],
+    "ITEMS:minecraft:head_armor": [
+      "~CUSTOM:Cascooo.helmet",
+      "~CUSTOM:Gorra.helmet"
     ]
   },
   "tab_element_order": {},
@@ -198,8 +246,7 @@
       "attribute.csmp_utilities.fugitive": "Fugitive",
       "enchantment.csmp_utilities.acidity": "Acidity",
       "effect.csmp_utilities.corrotion": "Corrotion",
-      "attribute.csmp_utilities.defenders": "Defenders",
-      "enchantment.csmp_utilities.backstep": "Backstep"
+      "attribute.csmp_utilities.defenders": "Defenders"
     }
   },
   "metadata": {
@@ -220,21 +267,17 @@
         "name": "Enchants",
         "children": [
           {
-            "name": "Acidity",
+            "name": "Backstep",
             "children": []
           },
           {
-            "name": "Backstep",
+            "name": "Acidity",
             "children": []
           }
         ]
       },
       {
-        "name": "Effects",
-        "children": []
-      },
-      {
-        "name": "Blocks",
+        "name": "Items",
         "children": []
       },
       {
@@ -251,7 +294,11 @@
         ]
       },
       {
-        "name": "Items",
+        "name": "Particles",
+        "children": []
+      },
+      {
+        "name": "Blocks",
         "children": []
       },
       {
@@ -259,7 +306,7 @@
         "children": []
       },
       {
-        "name": "Particles",
+        "name": "Effects",
         "children": []
       }
     ]
