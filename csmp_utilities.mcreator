@@ -161,18 +161,34 @@
         ]
       },
       "path": "~/Attributes/Defenders"
+    },
+    {
+      "name": "Backstep",
+      "type": "enchantment",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "backstep",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/csmp_utilities/enchantment/backstep.json"
+        ]
+      },
+      "path": "~/Enchants/Backstep"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "tag_elements": {
     "ENCHANTMENTS:minecraft:tradeable": [
+      "~CUSTOM:Backstep",
       "~CUSTOM:Acidity"
     ],
     "ENCHANTMENTS:minecraft:on_random_loot": [
+      "~CUSTOM:Backstep",
       "~CUSTOM:Acidity"
     ],
     "ENCHANTMENTS:minecraft:non_treasure": [
+      "~CUSTOM:Backstep",
       "~CUSTOM:Acidity"
     ]
   },
@@ -182,7 +198,8 @@
       "attribute.csmp_utilities.fugitive": "Fugitive",
       "enchantment.csmp_utilities.acidity": "Acidity",
       "effect.csmp_utilities.corrotion": "Corrotion",
-      "attribute.csmp_utilities.defenders": "Defenders"
+      "attribute.csmp_utilities.defenders": "Defenders",
+      "enchantment.csmp_utilities.backstep": "Backstep"
     }
   },
   "metadata": {
@@ -204,6 +221,10 @@
         "children": [
           {
             "name": "Acidity",
+            "children": []
+          },
+          {
+            "name": "Backstep",
             "children": []
           }
         ]
