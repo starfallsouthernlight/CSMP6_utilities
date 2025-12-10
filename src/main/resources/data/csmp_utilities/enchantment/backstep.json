@@ -1,0 +1,28 @@
+{
+  "description": {
+    "translate": "enchantment.csmp_utilities.backstep"
+  },
+  "supported_items": [
+    "minecraft:netherite_sword",
+    "minecraft:diamond_sword",
+    "minecraft:golden_sword",
+    "minecraft:iron_sword",
+    "minecraft:stone_sword",
+    "minecraft:wooden_sword"
+  ],
+  "weight": 10,
+  "max_level": 3,
+  "min_cost": {
+    "base": 1,
+    "per_level_above_first": 10
+  },
+  "max_cost": {
+    "base": 6,
+    "per_level_above_first": 10
+  },
+  "anvil_cost": 2,
+  "slots": [
+    "any"
+  ],
+  "exclusive_set": "knockback"
+}

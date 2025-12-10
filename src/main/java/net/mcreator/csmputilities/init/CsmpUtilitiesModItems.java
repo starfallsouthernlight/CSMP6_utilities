@@ -16,12 +16,12 @@ import net.mcreator.csmputilities.CsmpUtilitiesMod;
 public class CsmpUtilitiesModItems {
 	public static final DeferredRegister.Items REGISTRY = DeferredRegister.createItems(CsmpUtilitiesMod.MODID);
 	public static final DeferredItem<Item> GORRA_HELMET;
-	public static final DeferredItem<Item> CASCOOO_HELMET;
 	public static final DeferredItem<Item> NEKO_CAAAT_SPAWN_EGG;
+	public static final DeferredItem<Item> CASCOOO_HELMET;
 	static {
 		GORRA_HELMET = REGISTRY.register("gorra_helmet", GorraItem.Helmet::new);
-		CASCOOO_HELMET = REGISTRY.register("cascooo_helmet", CascoooItem.Helmet::new);
 		NEKO_CAAAT_SPAWN_EGG = REGISTRY.register("neko_caaat_spawn_egg", () -> new DeferredSpawnEggItem(CsmpUtilitiesModEntities.NEKO_CAAAT, -1, -1, new Item.Properties()));
+		CASCOOO_HELMET = REGISTRY.register("cascooo_helmet", CascoooItem.Helmet::new);
 	}
 	// Start of user code block custom items
 	// End of user code block custom items
