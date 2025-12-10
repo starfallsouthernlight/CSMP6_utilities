@@ -163,18 +163,48 @@
       "path": "~/Attributes/Defenders"
     },
     {
-      "name": "CascodeCascanuez",
+      "name": "Gorra",
       "type": "armor",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "cascode_cascanuez",
+      "registry_name": "gorra",
       "metadata": {
         "files": [
-          "src/main/resources/assets/csmp_utilities/models/item/cascode_cascanuez_helmet.json",
-          "src/main/java/net/mcreator/csmputilities/item/CascodeCascanuezItem.java"
+          "src/main/resources/assets/csmp_utilities/models/item/gorra_helmet.json",
+          "src/main/java/net/mcreator/csmputilities/item/GorraItem.java"
         ]
       },
       "path": "~/Items"
+    },
+    {
+      "name": "Cascooo",
+      "type": "armor",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cascooo",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/csmp_utilities/models/item/cascooo_helmet.json",
+          "src/main/java/net/mcreator/csmputilities/item/CascoooItem.java"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "NekoCaaat",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "neko_caaat",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/csmp_utilities/neoforge/biome_modifier/neko_caaat_biome_modifier.json",
+          "src/main/resources/assets/csmp_utilities/models/item/neko_caaat_spawn_egg.json",
+          "src/main/java/net/mcreator/csmputilities/entity/NekoCaaatEntity.java",
+          "src/main/java/net/mcreator/csmputilities/client/renderer/NekoCaaatRenderer.java"
+        ]
+      },
+      "path": "~/Mobs"
     }
   ],
   "variable_elements": [],
@@ -190,7 +220,8 @@
       "~CUSTOM:Acidity"
     ],
     "ITEMS:minecraft:head_armor": [
-      "~CUSTOM:CascodeCascanuez.helmet"
+      "~CUSTOM:Cascooo.helmet",
+      "~CUSTOM:Gorra.helmet"
     ]
   },
   "tab_element_order": {},
@@ -200,7 +231,10 @@
       "enchantment.csmp_utilities.acidity": "Acidity",
       "effect.csmp_utilities.corrotion": "Corrotion",
       "attribute.csmp_utilities.defenders": "Defenders",
-      "item.csmp_utilities.cascode_cascanuez_helmet": "Casco Cascanuez"
+      "item.csmp_utilities.gorra_helmet": "Gorra Casco",
+      "item.csmp_utilities.cascooo_helmet": "Cascooo Casco",
+      "entity.csmp_utilities.neko_caaat": "Neko Caaat",
+      "item.csmp_utilities.neko_caaat_spawn_egg": "Neko Caaat Spawn Egg"
     }
   },
   "metadata": {
@@ -210,6 +244,8 @@
       "src/main/java/net/mcreator/csmputilities/init/CsmpUtilitiesModParticleTypes.java",
       "src/main/java/net/mcreator/csmputilities/init/CsmpUtilitiesModParticles.java",
       "src/main/java/net/mcreator/csmputilities/init/CsmpUtilitiesModItems.java",
+      "src/main/java/net/mcreator/csmputilities/init/CsmpUtilitiesModEntities.java",
+      "src/main/java/net/mcreator/csmputilities/init/CsmpUtilitiesModEntityRenderers.java",
       "src/main/java/net/mcreator/csmputilities/CsmpUtilitiesMod.java",
       "src/main/resources/pack.mcmeta",
       "src/main/java/net/mcreator/csmputilities/init/CsmpUtilitiesModTabs.java",

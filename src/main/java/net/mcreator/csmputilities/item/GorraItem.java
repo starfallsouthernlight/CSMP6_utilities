@@ -1,7 +1,6 @@
 package net.mcreator.csmputilities.item;
 
 import net.neoforged.neoforge.registries.RegisterEvent;
-import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.client.extensions.common.RegisterClientExtensionsEvent;
 import net.neoforged.neoforge.client.extensions.common.IClientItemExtensions;
 import net.neoforged.fml.common.EventBusSubscriber;
@@ -17,6 +16,7 @@ import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.sounds.SoundEvents;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -27,7 +27,7 @@ import net.minecraft.client.Minecraft;
 import net.minecraft.Util;
 
 import net.mcreator.csmputilities.init.CsmpUtilitiesModItems;
-import net.mcreator.csmputilities.client.model.ModelCustomModel;
+import net.mcreator.csmputilities.client.model.Modelgorrita;
 
 import java.util.Map;
 import java.util.List;
@@ -35,7 +35,7 @@ import java.util.EnumMap;
 import java.util.Collections;
 
 @EventBusSubscriber
-public abstract class CascodeCascanuezItem extends ArmorItem {
+public abstract class GorraItem extends ArmorItem {
 	public static Holder<ArmorMaterial> ARMOR_MATERIAL = null;
 
 	@SubscribeEvent
@@ -47,8 +47,8 @@ public abstract class CascodeCascanuezItem extends ArmorItem {
 				map.put(ArmorItem.Type.CHESTPLATE, 6);
 				map.put(ArmorItem.Type.HELMET, 2);
 				map.put(ArmorItem.Type.BODY, 6);
-			}), 9, DeferredHolder.create(Registries.SOUND_EVENT, ResourceLocation.parse("item.armor.equip_diamond")), () -> Ingredient.of(), List.of(new ArmorMaterial.Layer(ResourceLocation.parse("csmp_utilities:baseplace"))), 1.1f, 0.5f);
-			registerHelper.register(ResourceLocation.parse("csmp_utilities:cascode_cascanuez"), armorMaterial);
+			}), 9, BuiltInRegistries.SOUND_EVENT.wrapAsHolder(SoundEvents.EMPTY), () -> Ingredient.of(), List.of(new ArmorMaterial.Layer(ResourceLocation.parse("csmp_utilities:baseplace"))), 0f, 0f);
+			registerHelper.register(ResourceLocation.parse("csmp_utilities:gorra"), armorMaterial);
 			ARMOR_MATERIAL = BuiltInRegistries.ARMOR_MATERIAL.wrapAsHolder(armorMaterial);
 		});
 	}
@@ -63,7 +63,7 @@ public abstract class CascodeCascanuezItem extends ArmorItem {
 			public HumanoidModel getHumanoidArmorModel(LivingEntity living, ItemStack stack, EquipmentSlot slot, HumanoidModel defaultModel) {
 				if (armorModel == null) {
 					armorModel = new HumanoidModel(new ModelPart(Collections.emptyList(),
-							Map.of("head", new ModelCustomModel(Minecraft.getInstance().getEntityModels().bakeLayer(ModelCustomModel.LAYER_LOCATION)).bone, "hat", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "body",
+							Map.of("head", new Modelgorrita(Minecraft.getInstance().getEntityModels().bakeLayer(Modelgorrita.LAYER_LOCATION)).bone, "hat", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "body",
 									new ModelPart(Collections.emptyList(), Collections.emptyMap()), "right_arm", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "left_arm",
 									new ModelPart(Collections.emptyList(), Collections.emptyMap()), "right_leg", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "left_leg",
 									new ModelPart(Collections.emptyList(), Collections.emptyMap()))));
@@ -73,27 +73,21 @@ public abstract class CascodeCascanuezItem extends ArmorItem {
 				armorModel.young = living.isBaby();
 				return armorModel;
 			}
-		}, CsmpUtilitiesModItems.CASCODE_CASCANUEZ_HELMET.get());
+		}, CsmpUtilitiesModItems.GORRA_HELMET.get());
 	}
 
-	public CascodeCascanuezItem(ArmorItem.Type type, Item.Properties properties) {
+	public GorraItem(ArmorItem.Type type, Item.Properties properties) {
 		super(ARMOR_MATERIAL, type, properties);
 	}
 
-	public static class Helmet extends CascodeCascanuezItem {
+	public static class Helmet extends GorraItem {
 		public Helmet() {
-			super(ArmorItem.Type.HELMET, new Item.Properties().durability(ArmorItem.Type.HELMET.getDurability(29)));
+			super(ArmorItem.Type.HELMET, new Item.Properties().durability(ArmorItem.Type.HELMET.getDurability(15)));
 		}
 
 		@Override
 		public ResourceLocation getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, ArmorMaterial.Layer layer, boolean innerModel) {
-			return ResourceLocation.parse("csmp_utilities:textures/entities/gorracascanuez.png");
-		}
-
-		@Override
-		@OnlyIn(Dist.CLIENT)
-		public boolean isFoil(ItemStack itemstack) {
-			return true;
+			return ResourceLocation.parse("csmp_utilities:textures/entities/gorrtiatextura.png");
 		}
 	}
 }

@@ -3,5 +3,8 @@
   "enchantment.csmp_utilities.acidity": "Acidity",
   "effect.csmp_utilities.corrotion": "Corrotion",
   "attribute.csmp_utilities.defenders": "Defenders",
-  "item.csmp_utilities.cascode_cascanuez_helmet": "Casco Cascanuez"
+  "item.csmp_utilities.gorra_helmet": "Gorra Casco",
+  "item.csmp_utilities.cascooo_helmet": "Cascooo Casco",
+  "entity.csmp_utilities.neko_caaat": "Neko Caaat",
+  "item.csmp_utilities.neko_caaat_spawn_egg": "Neko Caaat Spawn Egg"
 }

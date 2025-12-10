@@ -21,7 +21,10 @@ public class CsmpUtilitiesModTabs {
 	@SubscribeEvent
 	public static void buildTabContentsVanilla(BuildCreativeModeTabContentsEvent tabData) {
 		if (tabData.getTabKey() == CreativeModeTabs.COMBAT) {
-			tabData.accept(CsmpUtilitiesModItems.CASCODE_CASCANUEZ_HELMET.get());
+			tabData.accept(CsmpUtilitiesModItems.GORRA_HELMET.get());
+			tabData.accept(CsmpUtilitiesModItems.CASCOOO_HELMET.get());
+		} else if (tabData.getTabKey() == CreativeModeTabs.SPAWN_EGGS) {
+			tabData.accept(CsmpUtilitiesModItems.NEKO_CAAAT_SPAWN_EGG.get());
 		}
 	}
 }

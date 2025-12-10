@@ -3,7 +3,7 @@
   "_type": "armor",
   "definition": {
     "enableHelmet": true,
-    "textureHelmet": "minecraft:barrier",
+    "textureHelmet": "minecraft:beef",
     "enableBody": false,
     "textureBody": "",
     "enableLeggings": false,
@@ -16,10 +16,10 @@
       }
     ],
     "armorTextureFile": "baseplace",
-    "helmetName": "Casco Cascanuez",
-    "bodyName": "Cascode Cascanuez Peto de armadura",
-    "leggingsName": "Cascode Cascanuez Pantalones",
-    "bootsName": "Cascode Cascanuez Botas",
+    "helmetName": "Cascooo Casco",
+    "bodyName": "Cascooo Peto de armadura",
+    "leggingsName": "Cascooo Pantalones",
+    "bootsName": "Cascooo Botas",
     "helmetSpecialInformation": {
       "fixedValue": []
     },
@@ -32,9 +32,9 @@
     "bootsSpecialInformation": {
       "fixedValue": []
     },
-    "helmetModelName": "ModelCustomModel",
-    "helmetModelPart": "bone",
-    "helmetModelTexture": "gorracascanuez.png",
+    "helmetModelName": "ModelGORRA_CASCANUEZ_Converted",
+    "helmetModelPart": "group",
+    "helmetModelTexture": "gorritaaaaa.png",
     "bodyModelName": "Default",
     "bodyModelPart": "Body",
     "armsModelPartL": "Arms L",
@@ -61,7 +61,7 @@
     "leggingsImmuneToFire": false,
     "bootsImmuneToFire": false,
     "helmetGlowCondition": {
-      "fixedValue": true
+      "fixedValue": false
     },
     "bodyGlowCondition": {
       "fixedValue": false
@@ -84,16 +84,16 @@
     "bootsPiglinNeutral": {
       "fixedValue": false
     },
-    "maxDamage": 29,
+    "maxDamage": 15,
     "damageValueHelmet": 2,
     "damageValueBody": 6,
     "damageValueLeggings": 5,
     "damageValueBoots": 2,
     "enchantability": 9,
-    "toughness": 1.1,
-    "knockbackResistance": 0.5,
+    "toughness": 0.0,
+    "knockbackResistance": 0.0,
     "equipSound": {
-      "value": "item.armor.equip_diamond"
+      "value": ""
     },
     "repairItems": []
   }

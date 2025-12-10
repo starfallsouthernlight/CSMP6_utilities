@@ -18,11 +18,7 @@ import net.minecraft.network.protocol.common.custom.CustomPacketPayload;
 import net.minecraft.network.codec.StreamCodec;
 import net.minecraft.network.FriendlyByteBuf;
 
-import net.mcreator.csmputilities.init.CsmpUtilitiesModTabs;
-import net.mcreator.csmputilities.init.CsmpUtilitiesModParticleTypes;
-import net.mcreator.csmputilities.init.CsmpUtilitiesModMobEffects;
-import net.mcreator.csmputilities.init.CsmpUtilitiesModItems;
-import net.mcreator.csmputilities.init.CsmpUtilitiesModAttributes;
+import net.mcreator.csmputilities.init.*;
 
 import java.util.concurrent.ConcurrentLinkedQueue;
 import java.util.Map;
@@ -42,6 +38,7 @@ public class CsmpUtilitiesMod {
 		NeoForge.EVENT_BUS.register(this);
 		modEventBus.addListener(this::registerNetworking);
 		CsmpUtilitiesModItems.REGISTRY.register(modEventBus);
+		CsmpUtilitiesModEntities.REGISTRY.register(modEventBus);
 		CsmpUtilitiesModTabs.REGISTRY.register(modEventBus);
 		CsmpUtilitiesModMobEffects.REGISTRY.register(modEventBus);
 		CsmpUtilitiesModParticleTypes.REGISTRY.register(modEventBus);
