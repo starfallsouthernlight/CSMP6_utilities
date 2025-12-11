@@ -225,18 +225,69 @@
         ]
       },
       "path": "~/Mobs"
+    },
+    {
+      "name": "Backstep",
+      "type": "enchantment",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "backstep",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/csmp_utilities/enchantment/backstep.json"
+        ]
+      },
+      "path": "~/Enchants/Backstep"
+    },
+    {
+      "name": "Backstepapply",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "backstepapply",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/csmputilities/procedures/BackstepapplyProcedure.java"
+        ]
+      },
+      "path": "~/Enchants/Backstep"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "tag_elements": {
     "ENCHANTMENTS:minecraft:tradeable": [
+      "~CUSTOM:Backstep",
       "~CUSTOM:Acidity"
     ],
     "ENCHANTMENTS:minecraft:on_random_loot": [
+      "~CUSTOM:Backstep",
       "~CUSTOM:Acidity"
     ],
     "ENCHANTMENTS:minecraft:non_treasure": [
+      "~CUSTOM:Backstep",
       "~CUSTOM:Acidity"
     ],
     "ITEMS:minecraft:head_armor": [
@@ -254,23 +305,24 @@
       "item.csmp_utilities.gorra_helmet": "Gorra Casco",
       "item.csmp_utilities.cascooo_helmet": "Cascooo Casco",
       "entity.csmp_utilities.neko_caaat": "Neko Caaat",
-      "item.csmp_utilities.neko_caaat_spawn_egg": "Neko Caaat Spawn Egg"
+      "item.csmp_utilities.neko_caaat_spawn_egg": "Neko Caaat Spawn Egg",
+      "enchantment.csmp_utilities.backstep": "Backstep"
     }
   },
   "metadata": {
     "files": [
       "src/main/java/net/mcreator/csmputilities/init/CsmpUtilitiesModAttributes.java",
-      "src/main/java/net/mcreator/csmputilities/init/CsmpUtilitiesModMobEffects.java",
       "src/main/java/net/mcreator/csmputilities/init/CsmpUtilitiesModParticleTypes.java",
       "src/main/java/net/mcreator/csmputilities/init/CsmpUtilitiesModParticles.java",
+      "src/main/java/net/mcreator/csmputilities/init/CsmpUtilitiesModMobEffects.java",
       "src/main/java/net/mcreator/csmputilities/init/CsmpUtilitiesModItems.java",
       "src/main/java/net/mcreator/csmputilities/init/CsmpUtilitiesModEntities.java",
       "src/main/java/net/mcreator/csmputilities/init/CsmpUtilitiesModEntityRenderers.java",
-      "src/main/java/net/mcreator/csmputilities/CsmpUtilitiesMod.java",
-      "src/main/resources/pack.mcmeta",
-      "src/main/java/net/mcreator/csmputilities/init/CsmpUtilitiesModTabs.java",
+      "src/main/java/net/mcreator/csmputilities/init/CsmpUtilitiesModModels.java",
       "src/main/resources/META-INF/neoforge.mods.toml",
-      "src/main/java/net/mcreator/csmputilities/init/CsmpUtilitiesModModels.java"
+      "src/main/java/net/mcreator/csmputilities/init/CsmpUtilitiesModTabs.java",
+      "src/main/java/net/mcreator/csmputilities/CsmpUtilitiesMod.java",
+      "src/main/resources/pack.mcmeta"
     ]
   },
   "foldersRoot": {
@@ -281,6 +333,10 @@
         "children": [
           {
             "name": "Acidity",
+            "children": []
+          },
+          {
+            "name": "Backstep",
             "children": []
           }
         ]
