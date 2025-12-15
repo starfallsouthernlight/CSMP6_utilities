@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "axis=z": {
+      "model": "csmp_utilities:block/voided_portal_ew"
+    },
+    "axis=x": {
+      "model": "csmp_utilities:block/voided_portal_ns"
+    }
+  }
+}

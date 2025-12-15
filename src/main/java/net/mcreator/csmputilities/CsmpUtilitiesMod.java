@@ -37,6 +37,8 @@ public class CsmpUtilitiesMod {
 		// End of user code block mod constructor
 		NeoForge.EVENT_BUS.register(this);
 		modEventBus.addListener(this::registerNetworking);
+		CsmpUtilitiesModSounds.REGISTRY.register(modEventBus);
+		CsmpUtilitiesModBlocks.REGISTRY.register(modEventBus);
 		CsmpUtilitiesModItems.REGISTRY.register(modEventBus);
 		CsmpUtilitiesModEntities.REGISTRY.register(modEventBus);
 		CsmpUtilitiesModTabs.REGISTRY.register(modEventBus);
