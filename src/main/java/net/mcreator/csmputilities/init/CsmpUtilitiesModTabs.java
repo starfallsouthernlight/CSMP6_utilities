@@ -25,6 +25,7 @@ public class CsmpUtilitiesModTabs {
 			tabData.accept(CsmpUtilitiesModItems.CASCOOO_HELMET.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.SPAWN_EGGS) {
 			tabData.accept(CsmpUtilitiesModItems.NEKO_CAAAT_SPAWN_EGG.get());
+			tabData.accept(CsmpUtilitiesModItems.TONTIN_SPAWN_EGG.get());
 		}
 	}
 }

@@ -15,6 +15,7 @@ import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.core.registries.Registries;
 
+import net.mcreator.csmputilities.entity.TontinEntity;
 import net.mcreator.csmputilities.entity.NekoCaaatEntity;
 import net.mcreator.csmputilities.CsmpUtilitiesMod;
 
@@ -23,6 +24,10 @@ public class CsmpUtilitiesModEntities {
 	public static final DeferredRegister<EntityType<?>> REGISTRY = DeferredRegister.create(Registries.ENTITY_TYPE, CsmpUtilitiesMod.MODID);
 	public static final DeferredHolder<EntityType<?>, EntityType<NekoCaaatEntity>> NEKO_CAAAT = register("neko_caaat",
 			EntityType.Builder.<NekoCaaatEntity>of(NekoCaaatEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
+
+					.sized(0.6f, 1.8f));
+	public static final DeferredHolder<EntityType<?>, EntityType<TontinEntity>> TONTIN = register("tontin",
+			EntityType.Builder.<TontinEntity>of(TontinEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
 
 					.sized(0.6f, 1.8f));
 
@@ -35,10 +40,12 @@ public class CsmpUtilitiesModEntities {
 	@SubscribeEvent
 	public static void init(RegisterSpawnPlacementsEvent event) {
 		NekoCaaatEntity.init(event);
+		TontinEntity.init(event);
 	}
 
 	@SubscribeEvent
 	public static void registerAttributes(EntityAttributeCreationEvent event) {
 		event.put(NEKO_CAAAT.get(), NekoCaaatEntity.createAttributes().build());
+		event.put(TONTIN.get(), TontinEntity.createAttributes().build());
 	}
 }

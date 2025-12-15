@@ -9,5 +9,7 @@
   "item.csmp_utilities.neko_caaat_spawn_egg": "Neko Caaat Spawn Egg",
   "enchantment.csmp_utilities.backstep": "Backstep",
   "subtitles.the_town_in_sky": "",
-  "subtitles.the_town_in_the_sky": ""
+  "subtitles.the_town_in_the_sky": "",
+  "entity.csmp_utilities.tontin": "Tontin",
+  "item.csmp_utilities.tontin_spawn_egg": "Tontin Spawn Egg"
 }
