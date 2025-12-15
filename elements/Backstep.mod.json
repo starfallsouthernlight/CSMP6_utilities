@@ -4,7 +4,7 @@
   "definition": {
     "name": "Backstep",
     "supportedSlots": "any",
-    "weight": 5,
+    "weight": 8,
     "anvilCost": 1,
     "maxLevel": 1,
     "damageModifier": 0,
