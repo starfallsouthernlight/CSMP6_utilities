@@ -191,6 +191,22 @@
       "path": "~/Items"
     },
     {
+      "name": "NekoCaaat",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "neko_caaat",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/csmp_utilities/neoforge/biome_modifier/neko_caaat_biome_modifier.json",
+          "src/main/resources/assets/csmp_utilities/models/item/neko_caaat_spawn_egg.json",
+          "src/main/java/net/mcreator/csmputilities/entity/NekoCaaatEntity.java",
+          "src/main/java/net/mcreator/csmputilities/client/renderer/NekoCaaatRenderer.java"
+        ]
+      },
+      "path": "~/Mobs"
+    },
+    {
       "name": "Idle_condition",
       "type": "procedure",
       "compiles": true,
@@ -211,32 +227,67 @@
       "path": "~/Mobs"
     },
     {
-      "name": "NekoCaaat",
-      "type": "livingentity",
+      "name": "Backstep",
+      "type": "enchantment",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "neko_caaat",
+      "registry_name": "backstep",
       "metadata": {
         "files": [
-          "src/main/resources/data/csmp_utilities/neoforge/biome_modifier/neko_caaat_biome_modifier.json",
-          "src/main/resources/assets/csmp_utilities/models/item/neko_caaat_spawn_egg.json",
-          "src/main/java/net/mcreator/csmputilities/entity/NekoCaaatEntity.java",
-          "src/main/java/net/mcreator/csmputilities/client/renderer/NekoCaaatRenderer.java"
+          "src/main/resources/data/csmp_utilities/enchantment/backstep.json"
         ]
       },
-      "path": "~/Mobs"
+      "path": "~/Enchants/Backstep"
+    },
+    {
+      "name": "Backstepapply",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "backstepapply",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/csmputilities/procedures/BackstepapplyProcedure.java"
+        ]
+      },
+      "path": "~/Enchants/Backstep"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "tag_elements": {
     "ENCHANTMENTS:minecraft:tradeable": [
+      "~CUSTOM:Backstep",
       "~CUSTOM:Acidity"
     ],
     "ENCHANTMENTS:minecraft:on_random_loot": [
+      "~CUSTOM:Backstep",
       "~CUSTOM:Acidity"
     ],
     "ENCHANTMENTS:minecraft:non_treasure": [
+      "~CUSTOM:Backstep",
       "~CUSTOM:Acidity"
     ],
     "ITEMS:minecraft:head_armor": [
@@ -254,7 +305,8 @@
       "item.csmp_utilities.gorra_helmet": "Gorra Casco",
       "item.csmp_utilities.cascooo_helmet": "Cascooo Casco",
       "entity.csmp_utilities.neko_caaat": "Neko Caaat",
-      "item.csmp_utilities.neko_caaat_spawn_egg": "Neko Caaat Spawn Egg"
+      "item.csmp_utilities.neko_caaat_spawn_egg": "Neko Caaat Spawn Egg",
+      "enchantment.csmp_utilities.backstep": "Backstep"
     }
   },
   "metadata": {
@@ -280,17 +332,17 @@
         "name": "Enchants",
         "children": [
           {
+            "name": "Backstep",
+            "children": []
+          },
+          {
             "name": "Acidity",
             "children": []
           }
         ]
       },
       {
-        "name": "Effects",
-        "children": []
-      },
-      {
-        "name": "Blocks",
+        "name": "Items",
         "children": []
       },
       {
@@ -307,7 +359,11 @@
         ]
       },
       {
-        "name": "Items",
+        "name": "Particles",
+        "children": []
+      },
+      {
+        "name": "Blocks",
         "children": []
       },
       {
@@ -315,7 +371,7 @@
         "children": []
       },
       {
-        "name": "Particles",
+        "name": "Effects",
         "children": []
       }
     ]

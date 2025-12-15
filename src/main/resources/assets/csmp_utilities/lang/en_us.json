@@ -6,5 +6,6 @@
   "item.csmp_utilities.gorra_helmet": "Gorra Casco",
   "item.csmp_utilities.cascooo_helmet": "Cascooo Casco",
   "entity.csmp_utilities.neko_caaat": "Neko Caaat",
-  "item.csmp_utilities.neko_caaat_spawn_egg": "Neko Caaat Spawn Egg"
+  "item.csmp_utilities.neko_caaat_spawn_egg": "Neko Caaat Spawn Egg",
+  "enchantment.csmp_utilities.backstep": "Backstep"
 }
