@@ -191,22 +191,6 @@
       "path": "~/Items"
     },
     {
-      "name": "NekoCaaat",
-      "type": "livingentity",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "neko_caaat",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/csmp_utilities/neoforge/biome_modifier/neko_caaat_biome_modifier.json",
-          "src/main/resources/assets/csmp_utilities/models/item/neko_caaat_spawn_egg.json",
-          "src/main/java/net/mcreator/csmputilities/entity/NekoCaaatEntity.java",
-          "src/main/java/net/mcreator/csmputilities/client/renderer/NekoCaaatRenderer.java"
-        ]
-      },
-      "path": "~/Mobs"
-    },
-    {
       "name": "Idle_condition",
       "type": "procedure",
       "compiles": true,
@@ -222,6 +206,22 @@
         "return_type": "logic",
         "files": [
           "src/main/java/net/mcreator/csmputilities/procedures/Idle_conditionProcedure.java"
+        ]
+      },
+      "path": "~/Mobs"
+    },
+    {
+      "name": "NekoCaaat",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "neko_caaat",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/csmp_utilities/neoforge/biome_modifier/neko_caaat_biome_modifier.json",
+          "src/main/resources/assets/csmp_utilities/models/item/neko_caaat_spawn_egg.json",
+          "src/main/java/net/mcreator/csmputilities/entity/NekoCaaatEntity.java",
+          "src/main/java/net/mcreator/csmputilities/client/renderer/NekoCaaatRenderer.java"
         ]
       },
       "path": "~/Mobs"

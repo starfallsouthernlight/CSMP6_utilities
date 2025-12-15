@@ -7,20 +7,20 @@ import net.minecraft.client.model.geom.ModelPart;
 import net.minecraft.client.model.HierarchicalModel;
 
 import net.mcreator.csmputilities.entity.NekoCaaatEntity;
-import net.mcreator.csmputilities.client.model.animations.NekooooAnimation;
-import net.mcreator.csmputilities.client.model.ModelCustomModel;
+import net.mcreator.csmputilities.client.model.animations.NekoCaaatModelAnimation;
+import net.mcreator.csmputilities.client.model.ModelNekoCaaat;
 
-public class NekoCaaatRenderer extends MobRenderer<NekoCaaatEntity, ModelCustomModel<NekoCaaatEntity>> {
+public class NekoCaaatRenderer extends MobRenderer<NekoCaaatEntity, ModelNekoCaaat<NekoCaaatEntity>> {
 	public NekoCaaatRenderer(EntityRendererProvider.Context context) {
-		super(context, new AnimatedModel(context.bakeLayer(ModelCustomModel.LAYER_LOCATION)), 0.5f);
+		super(context, new AnimatedModel(context.bakeLayer(ModelNekoCaaat.LAYER_LOCATION)), 0.5f);
 	}
 
 	@Override
 	public ResourceLocation getTextureLocation(NekoCaaatEntity entity) {
-		return ResourceLocation.parse("csmp_utilities:textures/entities/nekocaaatss.png");
+		return ResourceLocation.parse("csmp_utilities:textures/entities/nekocaaattexture.png");
 	}
 
-	private static final class AnimatedModel extends ModelCustomModel<NekoCaaatEntity> {
+	private static final class AnimatedModel extends ModelNekoCaaat<NekoCaaatEntity> {
 		private final ModelPart root;
 		private final HierarchicalModel animator = new HierarchicalModel<NekoCaaatEntity>() {
 			@Override
@@ -31,7 +31,7 @@ public class NekoCaaatRenderer extends MobRenderer<NekoCaaatEntity, ModelCustomM
 			@Override
 			public void setupAnim(NekoCaaatEntity entity, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw, float headPitch) {
 				this.root().getAllParts().forEach(ModelPart::resetPose);
-				this.animate(entity.animationState0, NekooooAnimation.idle, ageInTicks, 1f);
+				this.animate(entity.animationState0, NekoCaaatModelAnimation.idle, ageInTicks, 1f);
 			}
 		};
 

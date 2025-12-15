@@ -18,10 +18,10 @@ import com.mojang.blaze3d.vertex.PoseStack;
 // Made with Blockbench 5.0.4
 // Exported for Minecraft version 1.17 or later with Mojang mappings
 // Paste this class into your mod and generate all required imports
-public class ModelCustomModel<T extends Entity> extends EntityModel<T> {
+public class ModelNekoCaaat<T extends Entity> extends EntityModel<T> {
 	// This layer location should be baked with EntityRendererProvider.Context in
 	// the entity renderer and passed into this model's constructor
-	public static final ModelLayerLocation LAYER_LOCATION = new ModelLayerLocation(ResourceLocation.fromNamespaceAndPath("csmp_utilities", "model_custom_model"), "main");
+	public static final ModelLayerLocation LAYER_LOCATION = new ModelLayerLocation(ResourceLocation.fromNamespaceAndPath("csmp_utilities", "model_neko_caaat"), "main");
 	public final ModelPart Waist;
 	public final ModelPart Head;
 	public final ModelPart parpadeo;
@@ -36,7 +36,7 @@ public class ModelCustomModel<T extends Entity> extends EntityModel<T> {
 	public final ModelPart RightLeg;
 	public final ModelPart LeftLeg;
 
-	public ModelCustomModel(ModelPart root) {
+	public ModelNekoCaaat(ModelPart root) {
 		this.Waist = root.getChild("Waist");
 		this.Head = this.Waist.getChild("Head");
 		this.parpadeo = this.Head.getChild("parpadeo");
@@ -88,12 +88,13 @@ public class ModelCustomModel<T extends Entity> extends EntityModel<T> {
 	}
 
 	@Override
+	public void setupAnim(T entity, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw, float headPitch) {
+	}
+
+	@Override
 	public void renderToBuffer(PoseStack poseStack, VertexConsumer vertexConsumer, int packedLight, int packedOverlay, int rgb) {
 		Waist.render(poseStack, vertexConsumer, packedLight, packedOverlay, rgb);
 		RightLeg.render(poseStack, vertexConsumer, packedLight, packedOverlay, rgb);
 		LeftLeg.render(poseStack, vertexConsumer, packedLight, packedOverlay, rgb);
-	}
-
-	public void setupAnim(T entity, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw, float headPitch) {
 	}
 }

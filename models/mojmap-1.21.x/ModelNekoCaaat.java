@@ -2,11 +2,11 @@
 // Exported for Minecraft version 1.17 or later with Mojang mappings
 // Paste this class into your mod and generate all required imports
 
-public class ModelCustomModel<T extends Entity> extends EntityModel<T> {
+public class ModelNekoCaaat<T extends Entity> extends EntityModel<T> {
 	// This layer location should be baked with EntityRendererProvider.Context in
 	// the entity renderer and passed into this model's constructor
 	public static final ModelLayerLocation LAYER_LOCATION = new ModelLayerLocation(
-			new ResourceLocation("modid", "custommodel"), "main");
+			new ResourceLocation("modid", "nekocaaat"), "main");
 	private final ModelPart Waist;
 	private final ModelPart Head;
 	private final ModelPart parpadeo;
@@ -21,7 +21,7 @@ public class ModelCustomModel<T extends Entity> extends EntityModel<T> {
 	private final ModelPart RightLeg;
 	private final ModelPart LeftLeg;
 
-	public ModelCustomModel(ModelPart root) {
+	public ModelNekoCaaat(ModelPart root) {
 		this.Waist = root.getChild("Waist");
 		this.Head = this.Waist.getChild("Head");
 		this.parpadeo = this.Head.getChild("parpadeo");
@@ -118,14 +118,16 @@ public class ModelCustomModel<T extends Entity> extends EntityModel<T> {
 	}
 
 	@Override
+	public void setupAnim(Entity entity, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw,
+			float headPitch) {
+
+	}
+
+	@Override
 	public void renderToBuffer(PoseStack poseStack, VertexConsumer vertexConsumer, int packedLight, int packedOverlay,
 			float red, float green, float blue, float alpha) {
 		Waist.render(poseStack, vertexConsumer, packedLight, packedOverlay, red, green, blue, alpha);
 		RightLeg.render(poseStack, vertexConsumer, packedLight, packedOverlay, red, green, blue, alpha);
 		LeftLeg.render(poseStack, vertexConsumer, packedLight, packedOverlay, red, green, blue, alpha);
-	}
-
-	public void setupAnim(T entity, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw,
-			float headPitch) {
 	}
 }
