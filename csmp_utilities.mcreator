@@ -310,6 +310,86 @@
         ]
       },
       "path": "~/Mobs"
+    },
+    {
+      "name": "DashCrystalHasItemGlowingEffect",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dash_crystal_has_item_glowing_effect",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/csmputilities/procedures/DashCrystalHasItemGlowingEffectProcedure.java"
+        ]
+      },
+      "path": "~/Items/Dash Crystal"
+    },
+    {
+      "name": "DashCrystal",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dash_crystal",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/csmp_utilities/models/item/dash_crystal.json",
+          "src/main/java/net/mcreator/csmputilities/item/DashCrystalItem.java"
+        ]
+      },
+      "path": "~/Items/Dash Crystal"
+    },
+    {
+      "name": "DashCrystalRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dash_crystal_rightclicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/csmputilities/procedures/DashCrystalRightclickedProcedure.java"
+        ]
+      },
+      "path": "~/Items/Dash Crystal"
+    },
+    {
+      "name": "DashCrystalItemInHandTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dash_crystal_item_in_hand_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/csmputilities/procedures/DashCrystalItemInHandTickProcedure.java"
+        ]
+      },
+      "path": "~/Items/Dash Crystal"
     }
   ],
   "variable_elements": [],
@@ -367,26 +447,27 @@
       "subtitles.the_town_in_sky": "",
       "subtitles.the_town_in_the_sky": "",
       "entity.csmp_utilities.tontin": "Tontin",
-      "item.csmp_utilities.tontin_spawn_egg": "Tontin Spawn Egg"
+      "item.csmp_utilities.tontin_spawn_egg": "Tontin Spawn Egg",
+      "item.csmp_utilities.dash_crystal": "Dash Crystal"
     }
   },
   "metadata": {
     "files": [
       "src/main/java/net/mcreator/csmputilities/init/CsmpUtilitiesModAttributes.java",
-      "src/main/java/net/mcreator/csmputilities/init/CsmpUtilitiesModMobEffects.java",
       "src/main/java/net/mcreator/csmputilities/init/CsmpUtilitiesModParticleTypes.java",
       "src/main/java/net/mcreator/csmputilities/init/CsmpUtilitiesModParticles.java",
+      "src/main/java/net/mcreator/csmputilities/init/CsmpUtilitiesModMobEffects.java",
       "src/main/java/net/mcreator/csmputilities/init/CsmpUtilitiesModBlocks.java",
       "src/main/java/net/mcreator/csmputilities/init/CsmpUtilitiesModItems.java",
       "src/main/java/net/mcreator/csmputilities/init/CsmpUtilitiesModEntities.java",
       "src/main/java/net/mcreator/csmputilities/init/CsmpUtilitiesModEntityRenderers.java",
-      "src/main/java/net/mcreator/csmputilities/init/CsmpUtilitiesModSounds.java",
-      "src/main/java/net/mcreator/csmputilities/CsmpUtilitiesMod.java",
-      "src/main/resources/pack.mcmeta",
+      "src/main/java/net/mcreator/csmputilities/init/CsmpUtilitiesModModels.java",
       "src/main/resources/assets/csmp_utilities/sounds.json",
-      "src/main/java/net/mcreator/csmputilities/init/CsmpUtilitiesModTabs.java",
+      "src/main/java/net/mcreator/csmputilities/init/CsmpUtilitiesModSounds.java",
       "src/main/resources/META-INF/neoforge.mods.toml",
-      "src/main/java/net/mcreator/csmputilities/init/CsmpUtilitiesModModels.java"
+      "src/main/java/net/mcreator/csmputilities/init/CsmpUtilitiesModTabs.java",
+      "src/main/java/net/mcreator/csmputilities/CsmpUtilitiesMod.java",
+      "src/main/resources/pack.mcmeta"
     ]
   },
   "foldersRoot": {
@@ -407,7 +488,12 @@
       },
       {
         "name": "Items",
-        "children": []
+        "children": [
+          {
+            "name": "Dash Crystal",
+            "children": []
+          }
+        ]
       },
       {
         "name": "Attributes",
