@@ -16,7 +16,7 @@ public class DashCrystalRightclickedProcedure {
 			} else {
 				entity.push(((entity.getLookAngle()).x()), 0, ((entity.getLookAngle()).z()));
 				if (entity instanceof Player _player)
-					_player.getCooldowns().addCooldown(itemstack.getItem(), 10000);
+					_player.getCooldowns().addCooldown(itemstack.getItem(), 200);
 			}
 		}
 	}

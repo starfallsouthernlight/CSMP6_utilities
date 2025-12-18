@@ -390,6 +390,29 @@
         ]
       },
       "path": "~/Items/Dash Crystal"
+    },
+    {
+      "name": "CorrotionOnEffectActiveTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "corrotion_on_effect_active_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/csmputilities/procedures/CorrotionOnEffectActiveTickProcedure.java"
+        ]
+      },
+      "path": "~/Effects"
     }
   ],
   "variable_elements": [],
