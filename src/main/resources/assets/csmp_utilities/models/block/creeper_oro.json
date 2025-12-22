@@ -1,0 +1,10 @@
+{
+  "parent": "csmp_utilities:custom/modelocreeperdejuguete",
+  "textures": {
+    "all": "minecraft:block/gold_block",
+    "particle": "minecraft:block/gold_block",
+    "1": "csmp_utilities:block/texture3",
+    "2": "csmp_utilities:block/creeperdeoro"
+  },
+  "render_type": "cutout_mipped"
+}

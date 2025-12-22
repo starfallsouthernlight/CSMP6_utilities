@@ -1,0 +1,12 @@
+{
+  "mappings": {
+    "default": {
+      "name": "default",
+      "map": {
+        "0": "taza",
+        "1": "choclala",
+        "2": "bombom"
+      }
+    }
+  }
+}

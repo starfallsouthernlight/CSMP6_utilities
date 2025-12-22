@@ -1,0 +1,9 @@
+{
+  "parent": "csmp_utilities:custom/tazadechocolala",
+  "textures": {
+    "0": "csmp_utilities:block/taza",
+    "1": "csmp_utilities:block/choclala",
+    "2": "csmp_utilities:block/bombom",
+    "particle": "csmp_utilities:item/baseplace_body"
+  }
+}

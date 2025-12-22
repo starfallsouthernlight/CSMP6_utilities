@@ -282,14 +282,14 @@
       "registry_name": "voided",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/csmputilities/world/dimension/VoidedDimension.java",
-          "src/main/resources/data/csmp_utilities/dimension_type/voided.json",
-          "src/main/resources/assets/csmp_utilities/models/block/voided_portal_ns.json",
           "src/main/resources/data/csmp_utilities/dimension/voided.json",
-          "src/main/resources/assets/csmp_utilities/blockstates/voided_portal.json",
-          "src/main/java/net/mcreator/csmputilities/world/teleporter/VoidedTeleporter.java",
-          "src/main/resources/assets/csmp_utilities/models/block/voided_portal_ew.json",
+          "src/main/resources/assets/csmp_utilities/models/block/voided_portal_ns.json",
+          "src/main/resources/data/csmp_utilities/dimension_type/voided.json",
           "src/main/java/net/mcreator/csmputilities/block/VoidedPortalBlock.java",
+          "src/main/resources/assets/csmp_utilities/blockstates/voided_portal.json",
+          "src/main/java/net/mcreator/csmputilities/world/dimension/VoidedDimension.java",
+          "src/main/resources/assets/csmp_utilities/models/block/voided_portal_ew.json",
+          "src/main/java/net/mcreator/csmputilities/world/teleporter/VoidedTeleporter.java",
           "src/main/java/net/mcreator/csmputilities/world/teleporter/VoidedPortalShape.java"
         ]
       },
@@ -339,8 +339,8 @@
       "registry_name": "dash_crystal",
       "metadata": {
         "files": [
-          "src/main/resources/assets/csmp_utilities/models/item/dash_crystal.json",
-          "src/main/java/net/mcreator/csmputilities/item/DashCrystalItem.java"
+          "src/main/java/net/mcreator/csmputilities/item/DashCrystalItem.java",
+          "src/main/resources/assets/csmp_utilities/models/item/dash_crystal.json"
         ]
       },
       "path": "~/Items/Dash Crystal"
@@ -413,6 +413,37 @@
         ]
       },
       "path": "~/Effects"
+    },
+    {
+      "name": "CreeperOro",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "creeper_oro",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/csmp_utilities/loot_table/blocks/creeper_oro.json",
+          "src/main/resources/assets/csmp_utilities/blockstates/creeper_oro.json",
+          "src/main/resources/assets/csmp_utilities/models/item/creeper_oro.json",
+          "src/main/java/net/mcreator/csmputilities/block/CreeperOroBlock.java",
+          "src/main/resources/assets/csmp_utilities/models/block/creeper_oro.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "Taza",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "taza",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/csmputilities/item/TazaItem.java",
+          "src/main/resources/assets/csmp_utilities/models/item/taza.json"
+        ]
+      },
+      "path": "~/Items"
     }
   ],
   "variable_elements": [],
@@ -471,26 +502,28 @@
       "subtitles.the_town_in_the_sky": "",
       "entity.csmp_utilities.tontin": "Tontin",
       "item.csmp_utilities.tontin_spawn_egg": "Tontin Spawn Egg",
-      "item.csmp_utilities.dash_crystal": "Dash Crystal"
+      "item.csmp_utilities.dash_crystal": "Dash Crystal",
+      "block.csmp_utilities.creeper_oro": "Creeper de Oro",
+      "item.csmp_utilities.taza": "Taza"
     }
   },
   "metadata": {
     "files": [
       "src/main/java/net/mcreator/csmputilities/init/CsmpUtilitiesModAttributes.java",
+      "src/main/java/net/mcreator/csmputilities/init/CsmpUtilitiesModMobEffects.java",
       "src/main/java/net/mcreator/csmputilities/init/CsmpUtilitiesModParticleTypes.java",
       "src/main/java/net/mcreator/csmputilities/init/CsmpUtilitiesModParticles.java",
-      "src/main/java/net/mcreator/csmputilities/init/CsmpUtilitiesModMobEffects.java",
       "src/main/java/net/mcreator/csmputilities/init/CsmpUtilitiesModBlocks.java",
       "src/main/java/net/mcreator/csmputilities/init/CsmpUtilitiesModItems.java",
       "src/main/java/net/mcreator/csmputilities/init/CsmpUtilitiesModEntities.java",
       "src/main/java/net/mcreator/csmputilities/init/CsmpUtilitiesModEntityRenderers.java",
-      "src/main/java/net/mcreator/csmputilities/init/CsmpUtilitiesModModels.java",
-      "src/main/resources/assets/csmp_utilities/sounds.json",
       "src/main/java/net/mcreator/csmputilities/init/CsmpUtilitiesModSounds.java",
-      "src/main/resources/META-INF/neoforge.mods.toml",
-      "src/main/java/net/mcreator/csmputilities/init/CsmpUtilitiesModTabs.java",
       "src/main/java/net/mcreator/csmputilities/CsmpUtilitiesMod.java",
-      "src/main/resources/pack.mcmeta"
+      "src/main/resources/pack.mcmeta",
+      "src/main/resources/assets/csmp_utilities/sounds.json",
+      "src/main/java/net/mcreator/csmputilities/init/CsmpUtilitiesModTabs.java",
+      "src/main/resources/META-INF/neoforge.mods.toml",
+      "src/main/java/net/mcreator/csmputilities/init/CsmpUtilitiesModModels.java"
     ]
   },
   "foldersRoot": {

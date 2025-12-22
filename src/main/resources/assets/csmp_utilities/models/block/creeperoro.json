@@ -1,0 +1,19 @@
+{
+  "parent": "neoforge:item/default",
+  "loader": "neoforge:composite",
+  "children": {
+    "part1": {
+      "loader": "neoforge:obj",
+      "render_type": "solid",
+      "model": "csmp_utilities:models/item/creeper_de_oro1.obj",
+      "emissive_ambient": true,
+      "textures": {
+        "#m_0edbbfc0-6d2f-47cc-5beb-655d1876e5eb": "csmp_utilities:block/creeperdeoro"
+      }
+    }
+  },
+  "textures": {
+    "particle": "csmp_utilities:block/creeperdeoro"
+  },
+  "render_type": "solid"
+}
