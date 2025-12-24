@@ -3,7 +3,7 @@
   "_type": "armor",
   "definition": {
     "enableHelmet": true,
-    "textureHelmet": "minecraft:beef",
+    "textureHelmet": "gorradenuez",
     "enableBody": false,
     "textureBody": "",
     "enableLeggings": false,

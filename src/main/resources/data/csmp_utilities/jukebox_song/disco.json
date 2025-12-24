@@ -1,0 +1,8 @@
+{
+  "comparator_output": 0,
+  "description": {
+    "translate": "item.csmp_utilities.disco.desc"
+  },
+  "length_in_seconds": 155,
+  "sound_event": "csmp_utilities:the_town_in_the_sky"
+}

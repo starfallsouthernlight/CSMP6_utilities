@@ -1,5 +1,7 @@
 package net.mcreator.csmputilities.block;
 
+import org.checkerframework.checker.units.qual.s;
+
 import net.minecraft.world.phys.shapes.VoxelShape;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.CollisionContext;
@@ -12,7 +14,7 @@ import net.minecraft.core.BlockPos;
 
 public class CreeperOroBlock extends Block {
 	public CreeperOroBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.METAL).strength(1f, 10f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
+		super(BlockBehaviour.Properties.of().sound(SoundType.METAL).strength(1f, 10f).lightLevel(s -> 15).noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
 	}
 
 	@Override

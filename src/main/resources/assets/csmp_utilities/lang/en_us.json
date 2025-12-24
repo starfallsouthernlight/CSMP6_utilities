@@ -14,5 +14,9 @@
   "item.csmp_utilities.tontin_spawn_egg": "Tontin Spawn Egg",
   "item.csmp_utilities.dash_crystal": "Dash Crystal",
   "block.csmp_utilities.creeper_oro": "Creeper de Oro",
-  "item.csmp_utilities.taza": "Taza"
+  "item.csmp_utilities.taza": "Taza",
+  "block.csmp_utilities.tazadechocolate": "Tazadechocolate",
+  "item.csmp_utilities.disco.desc": "Starfall",
+  "item.csmp_utilities.disco": "DISCO",
+  "gui.csmp_utilities.cocina.label_cocina_aqui_we": "COCINA AQUI WE"
 }

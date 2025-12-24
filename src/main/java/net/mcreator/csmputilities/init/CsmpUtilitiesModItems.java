@@ -15,6 +15,7 @@ import net.minecraft.world.item.BlockItem;
 import net.mcreator.csmputilities.item.TazaItem;
 import net.mcreator.csmputilities.item.GorraItem;
 import net.mcreator.csmputilities.item.DashCrystalItem;
+import net.mcreator.csmputilities.item.DISCOItem;
 import net.mcreator.csmputilities.item.CascoooItem;
 import net.mcreator.csmputilities.CsmpUtilitiesMod;
 
@@ -27,6 +28,8 @@ public class CsmpUtilitiesModItems {
 	public static final DeferredItem<Item> DASH_CRYSTAL;
 	public static final DeferredItem<Item> CREEPER_ORO;
 	public static final DeferredItem<Item> TAZA;
+	public static final DeferredItem<Item> TAZADECHOCOLATE;
+	public static final DeferredItem<Item> DISCO;
 	static {
 		GORRA_HELMET = REGISTRY.register("gorra_helmet", GorraItem.Helmet::new);
 		CASCOOO_HELMET = REGISTRY.register("cascooo_helmet", CascoooItem.Helmet::new);
@@ -35,6 +38,8 @@ public class CsmpUtilitiesModItems {
 		DASH_CRYSTAL = REGISTRY.register("dash_crystal", DashCrystalItem::new);
 		CREEPER_ORO = block(CsmpUtilitiesModBlocks.CREEPER_ORO);
 		TAZA = REGISTRY.register("taza", TazaItem::new);
+		TAZADECHOCOLATE = block(CsmpUtilitiesModBlocks.TAZADECHOCOLATE);
+		DISCO = REGISTRY.register("disco", DISCOItem::new);
 	}
 
 	// Start of user code block custom items

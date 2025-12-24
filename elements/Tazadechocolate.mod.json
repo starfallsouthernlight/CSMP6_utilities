@@ -2,14 +2,14 @@
   "_fv": 79,
   "_type": "block",
   "definition": {
-    "texture": "minecraft:gold_block",
+    "texture": "minecraft:red_wool",
     "textureTop": "",
     "textureLeft": "",
     "textureFront": "",
     "textureRight": "",
     "textureBack": "",
     "renderType": 2,
-    "customModelName": "modelocreeperdejuguete:default",
+    "customModelName": "tazadechocolala:default",
     "rotationMode": 0,
     "enablePitch": false,
     "emissiveRendering": false,
@@ -29,17 +29,17 @@
     "disableOffset": false,
     "boundingBoxes": [
       {
-        "mx": 5.0,
+        "mx": 4.0,
         "my": 0.0,
-        "mz": 3.0,
-        "Mx": 11.0,
-        "My": 14.0,
-        "Mz": 13.0,
+        "mz": 4.0,
+        "Mx": 12.0,
+        "My": 6.0,
+        "Mz": 12.0,
         "subtract": false
       }
     ],
     "customProperties": [],
-    "name": "Creeper de Oro",
+    "name": "Tazadechocolate",
     "specialInformation": {
       "fixedValue": []
     },
@@ -54,7 +54,7 @@
     "creativeTabs": [],
     "destroyTool": "Not specified",
     "customDrop": {
-      "value": ""
+      "value": "CUSTOM:Taza"
     },
     "dropAmount": 1,
     "xpAmountMin": 0,
@@ -93,7 +93,7 @@
     "isNotColidable": false,
     "isCustomSoundType": false,
     "soundOnStep": {
-      "value": "METAL"
+      "value": "DECORATED_POT"
     },
     "breakSound": {
       "value": ""
@@ -110,7 +110,7 @@
     "stepSound": {
       "value": ""
     },
-    "luminance": 15,
+    "luminance": 0,
     "unbreakable": false,
     "vanillaToolTier": "NONE",
     "isBonemealable": false,
@@ -135,6 +135,9 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
+    "onRightClicked": {
+      "name": "TazadechocolateOnBlockRightclicked"
+    },
     "generateFeature": false,
     "restrictionBiomes": [],
     "blocksToReplace": [

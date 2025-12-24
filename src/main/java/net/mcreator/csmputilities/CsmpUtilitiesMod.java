@@ -43,6 +43,7 @@ public class CsmpUtilitiesMod {
 		CsmpUtilitiesModEntities.REGISTRY.register(modEventBus);
 		CsmpUtilitiesModTabs.REGISTRY.register(modEventBus);
 		CsmpUtilitiesModMobEffects.REGISTRY.register(modEventBus);
+		CsmpUtilitiesModMenus.REGISTRY.register(modEventBus);
 		CsmpUtilitiesModParticleTypes.REGISTRY.register(modEventBus);
 		CsmpUtilitiesModAttributes.REGISTRY.register(modEventBus);
 		// Start of user code block mod init

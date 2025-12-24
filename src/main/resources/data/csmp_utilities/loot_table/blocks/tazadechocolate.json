@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "csmp_utilities:blocks/tazadechocolate",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "csmp_utilities:taza"
+        }
+      ]
+    }
+  ]
+}

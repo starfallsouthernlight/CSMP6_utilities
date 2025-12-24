@@ -198,7 +198,6 @@
       "registry_name": "neko_caaat",
       "metadata": {
         "files": [
-          "src/main/resources/data/csmp_utilities/neoforge/biome_modifier/neko_caaat_biome_modifier.json",
           "src/main/resources/assets/csmp_utilities/models/item/neko_caaat_spawn_egg.json",
           "src/main/java/net/mcreator/csmputilities/entity/NekoCaaatEntity.java",
           "src/main/java/net/mcreator/csmputilities/client/renderer/NekoCaaatRenderer.java"
@@ -305,8 +304,7 @@
         "files": [
           "src/main/java/net/mcreator/csmputilities/entity/TontinEntity.java",
           "src/main/resources/assets/csmp_utilities/models/item/tontin_spawn_egg.json",
-          "src/main/java/net/mcreator/csmputilities/client/renderer/TontinRenderer.java",
-          "src/main/resources/data/csmp_utilities/neoforge/biome_modifier/tontin_biome_modifier.json"
+          "src/main/java/net/mcreator/csmputilities/client/renderer/TontinRenderer.java"
         ]
       },
       "path": "~/Mobs"
@@ -444,6 +442,87 @@
         ]
       },
       "path": "~/Items"
+    },
+    {
+      "name": "Tazadechocolate",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tazadechocolate",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/csmp_utilities/loot_table/blocks/tazadechocolate.json",
+          "src/main/java/net/mcreator/csmputilities/block/TazadechocolateBlock.java",
+          "src/main/resources/assets/csmp_utilities/models/block/tazadechocolate.json",
+          "src/main/resources/assets/csmp_utilities/models/item/tazadechocolate.json",
+          "src/main/resources/assets/csmp_utilities/blockstates/tazadechocolate.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "TazadechocolateOnBlockRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tazadechocolate_on_block_rightclicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/csmputilities/procedures/TazadechocolateOnBlockRightclickedProcedure.java"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "DISCO",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "disco",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/csmputilities/item/DISCOItem.java",
+          "src/main/resources/assets/csmp_utilities/models/item/disco.json",
+          "src/main/resources/data/csmp_utilities/jukebox_song/disco.json"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "Cocina",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cocina",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/csmputilities/world/inventory/CocinaMenu.java",
+          "src/main/java/net/mcreator/csmputilities/client/gui/CocinaScreen.java"
+        ]
+      },
+      "path": "~/GUIS"
     }
   ],
   "variable_elements": [],
@@ -484,6 +563,9 @@
     ],
     "BLOCKS:minecraft:overworld_carver_replaceables": [
       "~Blocks.LIGHT"
+    ],
+    "ITEMS:minecraft:music_discs": [
+      "~CUSTOM:DISCO"
     ]
   },
   "tab_element_order": {},
@@ -504,13 +586,20 @@
       "item.csmp_utilities.tontin_spawn_egg": "Tontin Spawn Egg",
       "item.csmp_utilities.dash_crystal": "Dash Crystal",
       "block.csmp_utilities.creeper_oro": "Creeper de Oro",
-      "item.csmp_utilities.taza": "Taza"
+      "item.csmp_utilities.taza": "Taza",
+      "block.csmp_utilities.tazadechocolate": "Tazadechocolate",
+      "item.csmp_utilities.disco.desc": "Starfall",
+      "item.csmp_utilities.disco": "DISCO",
+      "gui.csmp_utilities.cocina.label_cocina_aqui_we": "COCINA AQUI WE"
     }
   },
   "metadata": {
     "files": [
       "src/main/java/net/mcreator/csmputilities/init/CsmpUtilitiesModAttributes.java",
       "src/main/java/net/mcreator/csmputilities/init/CsmpUtilitiesModMobEffects.java",
+      "src/main/java/net/mcreator/csmputilities/init/CsmpUtilitiesModScreens.java",
+      "src/main/java/net/mcreator/csmputilities/init/CsmpUtilitiesModMenus.java",
+      "src/main/java/net/mcreator/csmputilities/network/MenuStateUpdateMessage.java",
       "src/main/java/net/mcreator/csmputilities/init/CsmpUtilitiesModParticleTypes.java",
       "src/main/java/net/mcreator/csmputilities/init/CsmpUtilitiesModParticles.java",
       "src/main/java/net/mcreator/csmputilities/init/CsmpUtilitiesModBlocks.java",
@@ -582,6 +671,10 @@
       },
       {
         "name": "Dimension",
+        "children": []
+      },
+      {
+        "name": "GUIS",
         "children": []
       }
     ]
